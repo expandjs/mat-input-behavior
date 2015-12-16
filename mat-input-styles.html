@@ -139,11 +139,6 @@ A stylesheet used to stylize a [Material Design input](http://www.google.com/des
             :host .wrapper .main .label {
                 @apply(--layout-fit);
                 pointer-events: none !important;
-                -webkit-transition: font-size 0.4s cubic-bezier(0.55, 0, 0.01, 1),
-                                    font-weight 0.4s cubic-bezier(0.55, 0, 0.01, 1),
-                                    letter-spacing 0.4s cubic-bezier(0.55, 0, 0.01, 1),
-                                    line-height 0.4s cubic-bezier(0.55, 0, 0.01, 1),
-                                    -webkit-transform 0.4s cubic-bezier(0.55, 0, 0.01, 1);
                 transition: font-size 0.4s cubic-bezier(0.55, 0, 0.01, 1),
                             font-weight 0.4s cubic-bezier(0.55, 0, 0.01, 1),
                             letter-spacing 0.4s cubic-bezier(0.55, 0, 0.01, 1),
@@ -159,9 +154,7 @@ A stylesheet used to stylize a [Material Design input](http://www.google.com/des
 
             :host([floated]) .wrapper .main .label {
                 @apply(--mat-font-caption);
-                -webkit-transform: translateY(-20px);
                 transform: translateY(-20px);
-                -webkit-transform-origin: 0 0 0;
                 transform-origin: 0 0 0;
             }
 
@@ -203,7 +196,6 @@ A stylesheet used to stylize a [Material Design input](http://www.google.com/des
 
             :host .wrapper .underline .default {
                 border-top: 1px solid currentColor;
-                -webkit-transition: border 0.4s cubic-bezier(0.55, 0, 0.01, 1);
                 transition: border 0.4s cubic-bezier(0.55, 0, 0.01, 1);
             }
 
@@ -215,15 +207,12 @@ A stylesheet used to stylize a [Material Design input](http://www.google.com/des
                 border-top: 2px solid currentColor;
                 color: var(--mat-focused-color, #0091EA);
                 margin-top: -1px;
-                -webkit-transform: scale(0, 1);
                 transform: scale(0, 1);
-                -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.55, 0, 0.01, 1);
                 transition: transform 0.4s cubic-bezier(0.55, 0, 0.01, 1);
             }
 
             :host([focused]) .wrapper .underline .focused,
             :host([invalid]) .wrapper .underline .focused {
-                -webkit-transform: scale(1, 1);
                 transform: scale(1, 1);
             }
 
